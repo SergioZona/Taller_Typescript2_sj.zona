@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Taller 2</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous"
+		/>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row mt-3">
+				<div class="col border">
+					<h1>Sergio Julian Zona Moreno</h1>
+					<img
+						class="img-fluid max-width: 100% height: auto"
+						src="avatar.jpeg"
+						alt="Avatar"
+					/>
+					<div class="h3 p-3">Datos Personales</div>
+					<table class="table">
+						<tbody id="students"></tbody>
+					</table>
+				</div>
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<div class="h3 p-3">Cursos Actuales</div>
+							<form class="m-3">
+								<div class="form-row">
+									<div class="col">
+										<input
+											type="text"
+											class="form-control"
+											id="search-box"
+											placeholder="Filtrar por nombre"
+										/>
+									</div>
+									<div class="col">
+										<button
+											type="button"
+											id="button-filterByName"
+											class="btn btn-success"
+										>
+											Aplicar
+										</button>
+									</div>
+								</div>
+							</form>
+							<form class="m-3">
+								<div class="form-row">
+									<div class="col">
+										<input
+											type="text"
+											class="form-control"
+											id="search-box1"
+											placeholder="Ingrese valor menor"
+										/>
+									</div>
+									<div class="col">
+										<button
+											type="button"
+											id="button-filterByRange"
+											class="btn btn-success"
+										>
+											Consultar
+										</button>
+									</div>
+								</div>
+							</form>
+							<form class="m-3">
+								<div class="form-row">
+									<div class="col">
+										<input
+											type="text"
+											class="form-control"
+											id="search-box2"
+											placeholder="Ingrese valor mayor"
+										/>
+									</div>
+								</div>
+							</form>
+							<table class="table">
+								<thead class="thead-dark"></thead>
+								<tbody id="courses"></tbody>
+							</table>
+							<div class="row justify-content-end">
+								<h5 class="col-4"><strong>Total Créditos:</strong></h5>
+								<h5 class="col-4" id="total-credits"><strong></strong></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="./scripts/course.js"></script>
+		<script type="module" src="./scripts/dataCourses.js"></script>
+		<script type="module" src="./scripts/main.js"></script>
+		<script type="module" src="./scripts/student.js"></script>
+		<script type="module" src="./scripts/dataStudents.js"></script>
+	</body>
+</html>
